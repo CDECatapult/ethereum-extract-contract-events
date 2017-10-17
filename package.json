@@ -1,6 +1,6 @@
 {
   "name": "@digicat/ethereum-extract-contract-events",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Extracts events from a particular contract from block or transaction logs",
   "main": "index.js",
   "files": [
