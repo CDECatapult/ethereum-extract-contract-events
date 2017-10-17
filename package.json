@@ -1,0 +1,68 @@
+{
+  "name": "@digicat/ethereum-extract-contract-events",
+  "version": "0.0.0",
+  "description": "Extracts events from a particular contract from block or transaction logs",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=8.6"
+  },
+  "scripts": {
+    "coverage": "nyc npm test",
+    "lint": "as-i-preach",
+    "posttest": "as-i-preach",
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CDECatapult/ethereum-extract-contract-events.git"
+  },
+  "author": "Digital Catapult (https://www.digitalcatapultcentre.org.uk/)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/CDECatapult/ethereum-extract-contract-events/issues"
+  },
+  "homepage": "https://github.com/CDECatapult/ethereum-extract-contract-events#readme",
+  "keywords": [
+    "blockchain",
+    "contract",
+    "ethereum",
+    "web3"
+  ],
+  "dependencies": {
+    "keccak": "^1.3.0",
+    "web3": "^0.19.1"
+  },
+  "devDependencies": {
+    "@novemberborn/as-i-preach": "^10.1.0",
+    "ava": "^0.22.0",
+    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
+    "codecov": "^2.3.1",
+    "ganache-core": "github:CDECatapult/ganache-core#64ee0a3d8d4f46020480f20eae335754b4fb9290",
+    "memdown": "^1.4.1",
+    "nyc": "^11.2.1",
+    "solc": "^0.4.17",
+    "truffle-contract": "^3.0.0"
+  },
+  "ava": {
+    "babel": {
+      "plugins": [
+        "syntax-object-rest-spread"
+      ],
+      "presets": [
+        "@ava/transform-test-files",
+        "@ava/stage-4"
+      ]
+    }
+  },
+  "nyc": {
+    "reporter": [
+      "html",
+      "lcov",
+      "text"
+    ]
+  },
+  "standard-engine": "@novemberborn/as-i-preach"
+}
